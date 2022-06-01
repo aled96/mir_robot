@@ -1,17 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>mir_description</name>
-  <version>1.1.5</version>
-  <description>URDF description of the MiR100 robot</description>
+  <version>1.0.0</version>
+  <description>URDF description for the MiR250 robot</description>
 
-  <maintainer email="martin.guenther@dfki.de">Martin Günther</maintainer>
-  <author email="martin.guenther@dfki.de">Martin Günther</author>
+  <maintainer email="alessio.deluca@iit.it">Alessio De Luca</maintainer>
+  <author email="alessio.deluca@iit.it">Alessio De Luca</author>
 
   <license>BSD</license>
-
-  <url type="website">https://github.com/dfki-ric/mir_robot</url>
-  <url type="repository">https://github.com/dfki-ric/mir_robot</url>
-  <url type="bugtracker">https://github.com/dfki-ric/mir_robot/issues</url>
 
   <buildtool_depend>catkin</buildtool_depend>
 
