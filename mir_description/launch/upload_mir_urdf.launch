@@ -1,6 +1,14 @@
 <?xml version="1.0" ?>
 <launch>
-  <arg name="tf_prefix" default="" doc="TF prefix to use for all of Mobipick's TF frames"/>
+  <arg name="tf_prefix" default="" doc="TF prefix to use for all of the MiR's TF frames"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro $(find mir_description)/urdf/mir.urdf.xacro tf_prefix:=$(arg tf_prefix)" />
+<!--   <param name="robot_description" command="$(find xacro)/xacro $(find mir_description)/urdf/mir.urdf.xacro tf_prefix:=$(arg tf_prefix)" /> -->
+  
+  
+  <arg name="arm" default="true"/>
+  <arg name="base" default="true"/>
+  <arg name="realsense" default="false"/>
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(find relax_urdf)/urdf/relax_robot.urdf.xacro arm:=$(arg arm) base:=$(arg base) realsense:=$(arg realsense) floating_joint:=false tf_prefix:=$(arg tf_prefix)" />
+
 </launch>

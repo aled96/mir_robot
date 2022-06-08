@@ -9,7 +9,7 @@
   <arg name="prefix" value="$(arg tf_prefix)/" if="$(eval tf_prefix != '')" /> <!-- $(arg prefix) is used in all the config files! TODO: For multiple robots, create groups when loading the parameters to overwrite the arg? -->
   <arg name="prefix" value=""                  unless="$(eval tf_prefix != '')" />
 
-  <arg name="model_name" default="mir" doc="Name of the Gazebo robot model (needs to be different for each robot)" />
+  <arg name="model_name" default="relax" doc="Name of the Gazebo robot model (needs to be different for each robot)" />
 
 
   <!-- Load URDF -->
